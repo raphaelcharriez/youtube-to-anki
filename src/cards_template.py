@@ -1,7 +1,7 @@
 import genanki
 
 
-with open('card.css', 'r') as css_file:
+with open('resources/card.css', 'r') as css_file:
     css = css_file.read()
 
 

@@ -1,10 +1,12 @@
 import argparse
 import genanki
 import os
-from cards_template import video_and_original_subtitle_to_translation_template, video_to_subtitle, \
+from src.cards_template import video_and_original_subtitle_to_translation_template, video_to_subtitle, \
     translation_to_original_and_video
 from youtube_api import fetch_subtitle_data
 from tokenizer import Tokenizer
+from dictionary_translation import generate_vocabulary
+
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -78,4 +80,6 @@ if __name__ == '__main__':
     for note in notes:
         my_deck.add_note(note)
     genanki.Package(my_deck).write_to_file(f'{ROOT_DIR}/output/{video_id}.apkg')
-    
+
+
+    print(g)

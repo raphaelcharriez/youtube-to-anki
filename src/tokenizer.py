@@ -1,5 +1,5 @@
 import nltk
-
+import fugashi
 from languages import LANGUAGES
 
 

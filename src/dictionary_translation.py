@@ -1,19 +1,20 @@
 from wordfreq import word_frequency
-import nltk
-import fugashi
-from nltk.corpus import stopwords
-import PyDictionary
+from translate import Translator
 
 
+def generate_vocabulary(words, original_language, translation_language='en',
+                        freq_min=10**-6, freq_max=1):
 
-def generate_vocabulary(sentence, original_language, translation_language, freq_min = 10**-6, freq_max = 1):
-    tokenized = [word.surface for word in sentence]
-
+    translator = Translator(from_lang=original_language, to_lang=translation_language)
     frequency = [
-        word for word in tokenized if
+        {
+            "word": word,
+            "frequency": word_frequency(word, lang=original_language),
+            "translation": translator.translate(word)
+        } for word in words if
         (
-                (word_frequency(word, lang='ja') > freq_min) and
-                (word_frequency(word, lang='ja') < freq_max)
+                (word_frequency(word, lang=original_language) > freq_min) and
+                (word_frequency(word, lang=original_language) < freq_max)
         )
     ]
 

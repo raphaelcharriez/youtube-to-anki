@@ -32,7 +32,7 @@ video_and_original_subtitle_to_translation_template = genanki.Model(
           </iframe>
           </div>
         </div> 
-          ''',
+        ''',
       'afmt': '''{{FrontSide}}<hr id="answer">{{translation}}''',
     },
   ],
@@ -59,7 +59,7 @@ translation_to_original_and_video = genanki.Model(
         <div>
           {{translation}}
         </div>
-        ''',
+      ''',
       'afmt': '''
         <div>
           {{FrontSide}}
@@ -74,7 +74,7 @@ translation_to_original_and_video = genanki.Model(
             </iframe>
           </div>
         </div> 
-        ''',
+      ''',
 
 
     },
@@ -103,7 +103,7 @@ video_to_subtitle = genanki.Model(
               src="https://www.youtube.com/embed/{{video_id}}?autoplay=1&controls=1&start={{start}}&end={{end}}">
             </iframe>
         </div>
-        ''',
+      ''',
       'afmt': '''
         <div>
           {{FrontSide}}
@@ -112,6 +112,39 @@ video_to_subtitle = genanki.Model(
             <b>{{original}}</b>
           </div>
           <hr>
+          <div>
+            {{translation}}
+          </div>
+        </div> 
+      ''',
+
+
+    },
+  ],
+  css=css
+)
+
+word_and_translation = genanki.Model(
+  15,
+  'Word And Translation',
+  sort_field_index=0,
+  fields=[
+    {'name': "id"},
+    {'name': 'original'},
+    {'name': 'translation'},
+  ],
+  templates=[
+    {
+      'name': 'Video to Subtitles',
+      'qfmt': '''
+        <div>
+            {{original}}
+        </div>
+      ''',
+      'afmt': '''
+        <div>
+          {{FrontSide}}
+          <hr id="answer">
           <div>
             {{translation}}
           </div>

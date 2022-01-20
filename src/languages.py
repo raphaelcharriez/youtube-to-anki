@@ -1,8 +1,9 @@
 ## TO DO: Map the other languages.
 ## For this use case ok to store all those mapings in a basic data structure.
 
-languages_supported = {
-    "french": {
+LANGUAGES = {
+    "fr": {
+        "name": "french",
         "youtube": "fr",
         "dictionary": "fr",
         "voices": [
@@ -10,7 +11,8 @@ languages_supported = {
             "French Male"
         ]
     },
-    "italian": {
+    "it": {
+        "name": "it",
         "youtube": "it",
         "dictionary": "it",
         "voices": [
@@ -18,7 +20,8 @@ languages_supported = {
             "Italian male"
         ]
     },
-    "spanish": {
+    "sp": {
+        "name": "spanish",
         "youtube": "sp",
         "dictionary": "sp",
         "voices": [
@@ -26,7 +29,8 @@ languages_supported = {
             "Spanish Male"
         ]
     },
-    "russian": {
+    "ru": {
+        "name": "russian",
         "youtube": "ru",
         "dictionary": "ru",
         "voices": [
@@ -34,7 +38,8 @@ languages_supported = {
             "Russian Male"
         ]
     },
-    "chinese": {
+    "ch": {
+        "name": "chinese",
         "youtube": "ch",
         "dictionary": "ch",
         "voices": [
@@ -42,7 +47,8 @@ languages_supported = {
             "Chinese Male"
         ]
     },
-    "english": {
+    "en": {
+        "name": "english",
         "youtube": "en",
         "dictionary": "en",
         "voices": [
@@ -52,15 +58,17 @@ languages_supported = {
             "US English Male"
         ]
     },
-    "japanese": {
-        "youtube": "jp",
-        "dictionary": "jp",
+    "ja": {
+        "name": "japanese",
+        "youtube": "ja",
+        "dictionary": "ja",
         "voices": [
             "Japanese Female",
             "Japanese Male"
         ]
     },
-    "german": {
+    "ge": {
+        "name": "ge",
         "youtube": "ge",
         "dictionary": "ge",
         "voices": [

@@ -29,3 +29,5 @@ urllib3==1.26.8
 wcwidth==0.2.5
 wordfreq==2.5.1
 youtube-transcript-api==0.4.3
+
+translate~=3.6.1

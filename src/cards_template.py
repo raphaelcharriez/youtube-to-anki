@@ -135,7 +135,7 @@ word_and_translation = genanki.Model(
   ],
   templates=[
     {
-      'name': 'Video to Subtitles',
+      'name': 'Translation Voice',
       'qfmt': '''
         <div>
             {{original}}
@@ -150,8 +150,6 @@ word_and_translation = genanki.Model(
           </div>
         </div> 
         ''',
-
-
     },
   ],
   css=css

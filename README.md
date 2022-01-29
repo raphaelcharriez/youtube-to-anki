@@ -19,6 +19,9 @@ For instance for russian: https://www.youtube.com/watch?v=8Q1WDF6gUq0
 
 4/ Find the .apkg file in the output folder, open it with the ank app to add it to your decks,
 
+![alt text](https://github.com/raphaelcharriez/youtube-to-anki/blob/main/img/russian.jpeg?raw=true)
+
+
 ### Words Flashcards
 
 Set the generate_word_cards option to True to add vocabulary flash cards in the deck. It will cut the sentences into words, remove the stop words, very frequent and very rare words, and then translate them.

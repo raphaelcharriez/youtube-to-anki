@@ -31,3 +31,10 @@ The words with translation flashcard are added just before the line of subtitle 
 For now this doesn't work for japanese, chinese and korean as those language need a special tokenizer to split the sentence into word. I haven't set them up yet.
 
 I ended up not using that feature much as it really increases the size of the deck, and prefer to copy past the sentences into dictionary apps like imiwa for japanese or Pleco for chinese   
+
+
+### Examples 
+
+Linking cool videos to learn in the [video.md](https://github.com/raphaelcharriez/youtube-to-anki/blob/main/videos.md) file.
+
+Feel free to contribute! 

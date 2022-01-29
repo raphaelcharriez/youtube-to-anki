@@ -8,7 +8,10 @@ from tokenizer import Tokenizer
 from dictionary_translation import generate_vocabulary
 
 
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+from pathlib import Path
+mod_path = Path(__file__).parent.parent
+output = 'output'
+output_folder = (mod_path / output).resolve()
 
 parser = argparse.ArgumentParser(description='Anki Deck Creator')
 parser.add_argument(
@@ -101,4 +104,4 @@ if __name__ == '__main__':
         f'{video_id}')
     for note in notes:
         my_deck.add_note(note)
-    genanki.Package(my_deck).write_to_file(f'{ROOT_DIR}/output/{video_id}.apkg')
+    genanki.Package(my_deck).write_to_file(f'{output_folder}/{video_id}.apkg')

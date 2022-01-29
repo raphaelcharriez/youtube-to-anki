@@ -1,12 +1,12 @@
 # youtube-to-anki
-Convert Youtube Video with bilingual subtitles into Anki Cards for learning
+Convert Youtube Videos with bilingual subtitles into Anki Decks
 
-I found that repetition learning works the best for me when I learn language, but quickly becomes repetitive and uninteresting.
+I found that repetition learning works the best for me when I learn languages, but quickly becomes repetitive and uninteresting.
 
-I use that program to download subtitles from youtube video, and transform them into flashcards I can learn. The flashcards have a an iframe that will play the relevant sentence.
+I use this code to download bilingual subtitles from Youtube videos, and transform them into flashcards I can learn. The flashcards have a Youtube iframe that will play the relevant sentence.
 
-I learn the video this way, then play it a few time. It's both efficient and funnier than most flashcard Decks I found.
-## Basic Usage 
+I learn the vocabulary and the pronunciation sentence by sentence with the flashcards, then play the Youtube video a few time. It's been efficient, funny and rewarding to learn this way.
+### Basic Usage 
 1/ installing the requirements with 
 `pip install -r requirements.txt`
 
@@ -19,10 +19,12 @@ For instance for russian: https://www.youtube.com/watch?v=8Q1WDF6gUq0
 
 4/ Find the .apkg file in the output folder, open it with the ank app to add it to your decks,
 
-## Words Flashcards
+### Words Flashcards
 
-Set the generate_word_cards option to True to add vocabulary flash cards in the deck. It works  by cutting the sentence into words, removing the stop words, very frequent and very rare words, and then translating them.
+Set the generate_word_cards option to True to add vocabulary flash cards in the deck. It will cut the sentences into words, remove the stop words, very frequent and very rare words, and then translate them.
 
-For now this doesn't work for japanese, chinese and korean as those language need a special tokenizer to split the sentence into word. 
+The words with translation flashcard are added just before the line of subtitle so that you can learn the vocabulary before getting the full sentence.
 
-I ended up not using that feature much and prefer to copy past the sentences into dictionary apps like imiwa for japanese or Pleco for chinese   
+For now this doesn't work for japanese, chinese and korean as those language need a special tokenizer to split the sentence into word. I haven't set them up yet.
+
+I ended up not using that feature much as it really increases the size of the deck, and prefer to copy past the sentences into dictionary apps like imiwa for japanese or Pleco for chinese   

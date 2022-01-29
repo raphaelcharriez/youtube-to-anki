@@ -80,21 +80,21 @@ if __name__ == '__main__':
             genanki.Note(
                 model=video_and_original_subtitle_to_translation_template,
                 fields=[str(counter), r["original"], r["translation"], video_id, str(int(r["start"])),
-                        str(int(r["start"] + r["duration"]))])
+                        str(int(r["start"] + r["duration"] + 0.5))])
         )
         counter += 1
         notes.append(
             genanki.Note(
                 model=video_to_subtitle,
                 fields=[str(counter), r["original"], r["translation"], video_id, str(int(r["start"])),
-                        str(int(r["start"] + r["duration"]))])
+                        str(int(r["start"] + r["duration"] + 0.5))])
         )
         counter += 1
         notes.append(
             genanki.Note(
                 model=translation_to_original_and_video,
                 fields=[str(counter), r["original"], r["translation"], video_id, str(int(r["start"])),
-                        str(int(r["start"] + r["duration"]))])
+                        str(int(r["start"] + r["duration"] + 0.5))])
         )
         counter += 1
         print(r)

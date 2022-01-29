@@ -33,7 +33,7 @@ video_and_original_subtitle_to_translation_template = genanki.Model(
           </div>
           <hr>
           <div>
-          <iframe width="420px" height: "500px"
+          <iframe width="420px" height="300px"
             src="https://www.youtube.com/embed/{{video_id}}?autoplay=1&controls=1&start={{start}}&end={{end}}">
           </iframe>
           </div>
@@ -75,7 +75,7 @@ translation_to_original_and_video = genanki.Model(
           </div>
           <hr>
           <div>
-            <iframe width="420px" height: "500px"
+            <iframe width="420px" height="300px"
               src="https://www.youtube.com/embed/{{video_id}}?autoplay=1&controls=1&start={{start}}&end={{end}}">
             </iframe>
           </div>
@@ -105,7 +105,7 @@ video_to_subtitle = genanki.Model(
       'name': 'Video to Subtitles',
       'qfmt': '''
         <div>
-            <iframe width="420px" height: "500px"
+            <iframe width="420px" height="300px"
               src="https://www.youtube.com/embed/{{video_id}}?autoplay=1&controls=1&start={{start}}&end={{end}}">
             </iframe>
         </div>

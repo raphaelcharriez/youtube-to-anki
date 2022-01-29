@@ -1,7 +1,13 @@
 import genanki
 
+from pathlib import Path
 
-with open('resources/card.css', 'r') as css_file:
+
+mod_path = Path(__file__).parent
+css = 'resources/card.css'
+css_path = (mod_path / css).resolve()
+
+with open(css_path, 'r') as css_file:
     css = css_file.read()
 
 

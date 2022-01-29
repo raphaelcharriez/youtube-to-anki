@@ -1,7 +1,7 @@
 import argparse
 import genanki
 import os
-from src.cards_template import video_and_original_subtitle_to_translation_template, video_to_subtitle, \
+from cards_template import video_and_original_subtitle_to_translation_template, video_to_subtitle, \
     translation_to_original_and_video, word_and_translation
 from youtube_api import fetch_subtitle_data
 from tokenizer import Tokenizer
@@ -30,7 +30,7 @@ parser.add_argument(
     '--generate_word_cards',
     type=bool,
     help='Whether or not to generate individual words',
-    default=True)
+    default=False)
 
 if __name__ == '__main__':
 
